@@ -1,0 +1,80 @@
+.callback-button {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: transform 0.2s linear;
+}
+
+.callback-button.hide {
+    transform: scale(0);
+}
+
+.callback-button:hover {
+    transform: scale(1.3);
+}
+
+.callback-form {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+    width: 300px;
+    border: 1px solid rgb(210, 210, 210);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    transform: scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: transform 0.2s linear, opacity 0.2s linear;
+}
+.callback-form.show{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.callback-form.hide {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.close-button {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.callback-text {
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.send-button {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    font-size: 10px;
+}
